@@ -61,6 +61,7 @@ public class PlayerMove : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         //2. 이동방향을 설정하기
         Vector3 dir = new Vector3(h, 0, v);
+        
         dir = dir.normalized;
 
         //이동 블렌딩 트리를 호출하고 벡터의 크기 값을 넘겨준다. 
